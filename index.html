@@ -1,73 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noir wear</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="./css/font.css"/>
+    <title>Noir Wear</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slider.css">
 </head>
 <body>
-    <div class="header" id="header">
         <nav>
-            <img src="./img/Noir.png" alt="" class="logo">
+            <img src="./img/Noir.png" alt="Noir Logo" class="logo">
             <ul>
-                <li><a href="#" id="inicio">Inicio</a></li>
-                <li><a href="#" id="shop">Shop</a></li>
-                <li><a href="#" id="qmss">Quem somos</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#lookbook">Lookbook</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#stocklist">Stocklist</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#store">Flagship Store</a></li>
             </ul>
-            <a href="" class="btn">Carrinho</a>
         </nav>
-        <!-- <div class="info">
-            <div>
-                <h2 id="seg">1.9 s</h2>
-                <p>60 mph</p>
+        <section>
+            <div class="slide-container">
+                <span id="img/cls.png"></span>
+                <span id="group.png"></span>
+                <span id="img/captive.png"></span>
+                <span id="img/image-1.png"></span>
+                <span id="img/pace.png"></span>
+                <span id="img/homem.png"></span>
+                <span id="img/piet.png"></span>
+                <div class="image-container">
+                    <img src="./img/cls.png" class="slider-image">
+                    <img src="./img/group.png" class="slider-image">
+                    <img src="./img/captive.png" class="slider-image">
+                    <img src="./img/image-1.png" class="slider-image">
+                    <img src="./img/pace.png" class="slider-image">
+                    <img src="./img/homem.png" class="slider-image">
+                    <img src="./img/piet.png" class="slider-image">
+
+                </div>
+                <div class="button-container">
+                    <a href="#img/cls.png" class="slider-button"></a>
+                    <a href="#img/group.png" class="slider-button"></a>
+                    <a href="#img/captive.png" class="slider-button"></a>
+                </div>
             </div>
-            <div>
-                <h2 id="mph">200 mph</h2>
-                <p>Top Speed</p>
-            </div>
-            <div>
-                <h2 id="mi">396mi</h2>
-                <p>Max Range</p>
-            </div>
-            <div class="line"></div>
-            <div>
-                <h2 id="model">Model S</h2>
-            </div>
-        </div> -->
-    </div>
+        </section>
+        <!-- <section class="gallery">
+            <img src="./img/cls.png" alt="jaqueta">
+            <img src="./img/group.png" alt="grupo2">
+            <img src="./img/captive.png" alt="boné">
+            <img src="./img/image-1.png" alt="grupo">
+            <img src="./img/pace.png" alt="casaco">
+            <img src="./img/homem.png" alt="homem">
+        </section> -->
+    <footer>
+        <div class="footer-links">
+            <a href="#contact">Contato</a>
+            <a href="#exchange">Trocas & Devoluções</a>
+            <a href="#privacy">Política de Privacidade</a>
+            <a href="#shipping">Envio & Pagamento</a>
+        </div>
+        <div class="social-icons">
+            <img src="./img/instagram.png" alt="Instagram">
+            <img src="./img/pinterest.png" alt="Pinterest">
+            <img src="./img/tiktok.png" alt="TikTok">
+            <img src="./img/tt.png" alt="Twitter">
+            <img src="./img/youtube.png" alt="YouTube">
+        </div>
+    </footer>
 </body>
-
-<script>
-    let  header = document.getElementById('header')
-    let  inicio = document.getElementById('inicio')
-    let  m3 = document.getElementById('model3')
-    let  mx = document.getElementById('modelx')
-    let model = document.getElementById('model')
-    let seg = document.getElementById('seg')
-    let mph = document.getElementById('mph')
-    let mi = document.getElementById('mi')
-
-    inicio.onclick = function(){
-        header.style.backgroundImage = "url(./img/image-1.png)"
-        model.innerHTML = "Model S"
-        seg.innerHTML = "1.9 s"
-        mph.innerHTML = "200 mph"
-        mi.innerHTML = "396 mi"
-    }
-    m3.onclick = function(){
-        header.style.backgroundImage = "url(./image-2.png)"
-        model.innerHTML = "Model 3"
-        seg.innerHTML = "3.1 s"
-        mph.innerHTML = "180 mph"
-        mi.innerHTML = "402 mi"
-    }
-    mx.onclick = function(){
-        header.style.backgroundImage = "url(./image-3.png)"
-        model.innerHTML = "Model X"
-        seg.innerHTML = "2.5 s"
-        mph.innerHTML = "155 mph"
-        mi.innerHTML = "333 mi"
-    }
-</script>
 </html>
