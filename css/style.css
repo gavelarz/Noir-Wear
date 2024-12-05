@@ -69,3 +69,21 @@ footer .social-icons img {
     height: 28px;
     margin-right: 35px;
 }
+
+@media(width<500px){
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    footer .footer-links a {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    footer .social-icons img {
+        margin-top: 20px;
+    }
+
+}
+
