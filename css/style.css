@@ -40,17 +40,6 @@ nav ul li a {
     text-decoration: none;
     color: #000;
 }
-
-main .gallery {
-    display: flex;
-    padding: 20px;
-    
-}
-
-main .gallery img {
-    height: auto;
-}
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -69,4 +58,14 @@ footer .social-icons img {
     width: 24px;
     height: 24px;
     margin: 0 5px;
+}
+.carrinho{
+    width: 32px;
+    height: 32px;
+    margin-right: 35px;
+}
+.cadastro{
+    width: 32px;
+    height: 28px;
+    margin-right: 35px;
 }

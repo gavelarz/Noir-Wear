@@ -4,22 +4,22 @@
     box-sizing: border-box;
 }
 .slide-container{
-    width: 100vw;
-    height: 50vh;
+    width: auto;
+    height: 80vh;
     margin: 0;
     overflow: hidden;
     position: relative;
 }
 .image-container{
-    width:448vw;
-    height: 50vh;
+    width:420vw;
+    height: 80vh;
     display: flex;
-    animation:slideAnimation 20s infinite ease-in-out;
+    animation:slideAnimation 18s infinite ease-in-out;
     animation-play-state: running;
 }
 .slider-image{
-    width: 100vw;
-    height: 50vh;
+    width: auto;
+    height: 80vh;
     object-fit: cover;
 }
 .button-container{
@@ -38,7 +38,7 @@
     border-radius: 50%;
     background-color: #fff;
     cursor: pointer;
-    transition: background-color 1s ease;
+    transition: background-color 10s ease;
 }
 .slider-button:hover{
     background-color: #888;
@@ -59,11 +59,11 @@
 }
 #slider-image3:target ~.image-container{
     animation: none;
-    transform: translateX(-200vw);
+    transform: translateX(0vw);
 }
+
 @keyframes slideAnimation{
     0% {transform: translateX(0);}
-    33.33% {transform: translateX(-100vw);}
-    66.66% {transform: translateX(-200vw);}
-    100% {transform: translateX(0);}
+    33.33%{transform: translateX(-102vw);}
+    100%{transform: translateX(-180vw);}
 }
